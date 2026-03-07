@@ -13,23 +13,27 @@ type Payment interface {
 	Pay(amount int)
 }
 
-type CreditCard struct {}
+type CreditCard struct{}
 
-func (c CreditCard) Pay(amount int){
+func (c CreditCard) Pay(amount int) {
 	fmt.Println("Paid using credit card: ", amount)
 }
 
-type Upi struct {}
+type Upi struct{}
 
 func (u Upi) Pay(amount int) {
 	fmt.Println("Paid using UPI: ", amount)
 }
 
-func ProcessPayment(p Payment){
-	p.Pay(100)
+func ProcessPayment(p Payment, amount int) {
+	p.Pay(amount)
 }
 
-func main(){
+func main() {
 	cc := CreditCard{}
-	ProcessPayment(cc)  
+	ProcessPayment(cc, 1000)
+
+	upi := Upi{}
+	ProcessPayment(upi, 500)
+
 }
