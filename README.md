@@ -1,7 +1,7 @@
 # Golang Practice
 
 A personal repository for practicing and experimenting with **Go (Golang)** concepts.
-This repo contains examples, coding exercises, and notes covering Go fundamentals, concurrency, data structures, and backend development concepts.
+This repo contains examples, coding exercises, and notes covering Go fundamentals, concurrency, object-oriented principles, and data structures.
 
 ---
 
@@ -9,11 +9,12 @@ This repo contains examples, coding exercises, and notes covering Go fundamental
 
 The goal of this repository is to:
 
-* Practice Go language fundamentals
-* Strengthen problem-solving skills using Go
-* Explore Go concurrency patterns
-* Prepare for backend and Golang interviews
-* Maintain a personal reference for commonly used Go concepts
+* Practice **Go language fundamentals**
+* Understand **core backend concepts**
+* Demonstrate **Object-Oriented Programming concepts in Go**
+* Implement **data structures and algorithms**
+* Explore **concurrency patterns in Go**
+* Maintain a **personal reference for Go learning**
 
 ---
 
@@ -22,65 +23,104 @@ The goal of this repository is to:
 ```
 golang-practice
 │
+├── fundamentals
+│   └── Basic Go concepts and syntax examples
+│
+├── concurrency
+│   └── Goroutines, channels, worker pools, and concurrency patterns
+│
 ├── oops
 │   ├── encapsulation.go
 │   ├── abstraction.go
 │   ├── polymorphism.go
 │   └── composition.go
 │
+├── dsa
+│   └── Data structures and algorithm problems implemented in Go
+│
 └── README.md
 ```
 
 ---
 
-## 🧠 Topics Covered
+## 🧠 OOP Concepts in Go
 
-Some of the Go concepts practiced in this repository:
+Although Go is **not a traditional object-oriented language**, it supports core OOP principles using:
 
-* Go syntax and fundamentals
-* Structs and methods
-* Interfaces
-* Pointers
-* Error handling
-* Goroutines
-* Channels
-* Concurrency patterns
-* Data structures and algorithms
-* Backend design patterns
+* **Structs**
+* **Interfaces**
+* **Composition**
+
+Examples included in this repository demonstrate:
+
+| Concept                               | File               |
+| ------------------------------------- | ------------------ |
+| Encapsulation                         | `encapsulation.go` |
+| Abstraction                           | `abstraction.go`   |
+| Polymorphism                          | `polymorphism.go`  |
+| Composition (Inheritance alternative) | `composition.go`   |
 
 ---
 
-## 🚀 How to Run
+## 🚀 Running the Examples
 
-Make sure Go is installed on your system.
+Make sure **Go is installed** on your system.
 
-Check Go installation:
+Check installation:
 
 ```bash
 go version
 ```
 
-Run any Go file:
+Run any example using:
 
 ```bash
-go run filename.go
+go run <file-path>
 ```
 
 Example:
 
 ```bash
-go run goroutines.go
+go run oops/inheritance.go
 ```
+
+Or run other examples:
+
+```bash
+go run oops/encapsulation.go
+go run oops/abstraction.go
+go run oops/polymorphism.go
+```
+
+Each file contains a **standalone example** demonstrating a specific concept.
 
 ---
 
-## 📖 Resources
+## 📚 Topics Covered
 
-Useful resources for learning Go:
+This repository will include examples related to:
+
+* Go syntax and fundamentals
+* Structs and methods
+* Interfaces
+* Encapsulation
+* Abstraction
+* Polymorphism
+* Composition
+* Goroutines
+* Channels
+* Concurrency patterns
+* Data structures and algorithms
+
+---
+
+## 📖 Learning Resources
+
+Helpful resources for learning Go:
 
 * https://go.dev/doc/
-* https://gobyexample.com/
 * https://tour.golang.org/
+* https://gobyexample.com/
 
 ---
 
