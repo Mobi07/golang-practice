@@ -22,25 +22,13 @@ The goal of this repository is to:
 ```
 golang-practice
 │
-├── fundamentals
-│   ├── variables.go
-│   ├── structs.go
-│   ├── interfaces.go
-│   └── pointers.go
+├── oops
+│   ├── encapsulation.go
+│   ├── abstraction.go
+│   ├── polymorphism.go
+│   └── composition.go
 │
-├── concurrency
-│   ├── goroutines.go
-│   ├── channels.go
-│   └── worker_pool.go
-│
-├── dsa
-│   ├── binary_search.go
-│   ├── two_sum.go
-│   └── max_subarray.go
-│
-└── interview_notes
-    ├── golang_basics.md
-    └── concurrency_notes.md
+└── README.md
 ```
 
 ---
